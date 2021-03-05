@@ -1,10 +1,7 @@
-<h1>Seja bem vindo a <%= app_name %>, <%= @username %></h1>
-<p><strong>Data: </strong><%= date_br Date.today %></p>
-<ul>
-  <li>
-    <%= link_to "Coins", coins_path %>
-  </li>
-  <li>
-    <%= link_to "Mining Types", mining_types_path %>
-  </li>
-</ul>
+<div class="bg-secondary text-light p-4 rounded">
+  <h1 class="display-4">Seja bem vindo a <%= app_name %></h1>
+  <p class="lead">Este é um app para voce cadastrar e acompanhar as suas cryptomoedas</p>
+  <hr class="my-4">
+  <p>Para começar, selecione uma das opções abaixo:</p>
+  <%= render "menu" %>
+</div>
